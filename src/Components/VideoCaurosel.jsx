@@ -25,7 +25,7 @@ const VideoCarousel = () => {
   const { isEnd, isLastVideo, startPlay, videoId, isPlaying } = video;
 
   useGSAP(() => {
-    // slider animation to move the video out of the screen and bring the next video in
+    // slider animation to move the video out of the screen and bring the next vide o in
     gsap.to("#slider", {
       transform: `translateX(${-100 * videoId}%)`,
       duration: 2,
@@ -103,6 +103,7 @@ const VideoCarousel = () => {
           videoRef.current[videoId].currentTime /
             hightlightsSlides[videoId].videoDuration
         );
+
       };
 
       if (isPlaying) {
